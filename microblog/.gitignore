@@ -1,3 +1,14 @@
 .env
 .vagrant
 venv
+venv-*
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+logs/
+*.log
+app.db
+instance/

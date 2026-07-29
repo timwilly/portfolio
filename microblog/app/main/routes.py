@@ -97,9 +97,8 @@ def edit_profile():
 def delete_profile():
     form = DeleteProfileForm()
     if form.validate_on_submit():
-        print(form.password.data)
         user = User.query.filter_by(username=current_user.username).first()
-        if(user.check_password(form.password.data)):
+        if user.check_password(form.password.data):
             db.session.delete(user)
             db.session.commit()
             flash('Your account has been deleted', 'success')

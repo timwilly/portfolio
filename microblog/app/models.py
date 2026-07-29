@@ -120,7 +120,7 @@ class User(UserMixin, db.Model):
     
     def get_task_in_progress(self, name):
         return Task.query.filter_by(name=name, user=self,
-                                    complte=False).first()
+                                    complete=False).first()
         
 
 class SearchableMixin(object):

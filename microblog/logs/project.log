@@ -80,3 +80,7 @@ elastic_transport.ConnectionError: Connection error caused by: ConnectionError(C
 2025-04-05 14:49:47,054 INFO: Project startup [in /Users/willy/Documents/Projets informatique/projet_photo/microblog/app/__init__.py:99]
 2025-04-05 14:51:37,957 INFO: Project startup [in /Users/willy/Documents/Projets informatique/projet_photo/microblog/app/__init__.py:99]
 2025-04-05 18:14:59,115 INFO: Project startup [in /Users/willy/Documents/Projets informatique/projet_photo/microblog/app/__init__.py:99]
+2026-07-01 03:07:09,467 INFO: Project startup [in /Users/willy/Documents/GitHub/projet_photo/microblog/app/__init__.py:100]
+2026-07-28 00:31:50,210 INFO: Project startup [in /Users/willy/Documents/GitHub/projet_photo/microblog/app/__init__.py:100]
+2026-07-28 00:32:25,799 INFO: Project startup [in /Users/willy/Documents/GitHub/projet_photo/microblog/app/__init__.py:100]
+2026-07-29 03:48:09,969 INFO: Project startup [in /Users/willy/Documents/GitHub/projet_photo/microblog/app/__init__.py:100]

@@ -55,8 +55,9 @@ def create_app(config_class=Config):
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
 
-    # Cédule une job...
-    scheduler.start()
+    # Cédule une job, sauf pendant les tests.
+    if not app.testing and not scheduler.running:
+        scheduler.start()
     
     # Importe les données, à enlever lors de la mise en production
     #from app.tasks import import_data_business_montreal
