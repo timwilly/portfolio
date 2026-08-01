@@ -1,6 +1,7 @@
 #user_popup {
-    background-image: linear-gradient(to right, #1D0C32, #32135A ,#582D90, #A582CD),
-    linear-gradient(to bottom, blue, yellow);
+    color: #FFFFFF;
+    background: var(--color-nav);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 #user_popup p {

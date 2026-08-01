@@ -1,4 +1,5 @@
 #introduction {
+  color: var(--color-text);
   font-size: 22px;
   text-align: justify;
 }
@@ -23,17 +24,21 @@
 }
 
 #cv_button {
-  background-color: #0074d9; /* Couleur de fond bleue */
-  color: #fff; /* Couleur du texte blanc */
-  border: none; /* Pas de bordure */
-  padding: 10px 20px; /* Rembourrage intérieur pour le bouton */
-  border-radius: 5px; /* Coins arrondis */
-  cursor: pointer; /* Curseur de la main au survol */
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: var(--color-accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-#cv_button:hover {
-  background-color: #0056b3; /* Couleur de fond légèrement plus sombre au survol */
-
+#cv_button:hover,
+#cv_button:focus {
+  color: #FFFFFF;
+  background-color: var(--color-accent-hover);
+  text-decoration: none;
 }
 
 #resized_image {
@@ -42,7 +47,7 @@
   height: auto;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 42px 82px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 45px rgba(24, 42, 48, 0.18);
 }
 
 .photo-gallery {
@@ -53,12 +58,12 @@
 }
 
 .photography_description {
-  font-size: 24px; /* Taille de la police */
-  font-weight: bold; /* Épaisseur de la police */
-  text-align: center; /* Centrer le texte */
-  margin: 20px 0; /* Marges supérieure et inférieure */
-  line-height: 1.5; /* Hauteur de ligne pour l'espacement */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre pour donner du relief */
+  color: var(--color-text-muted);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.5;
 }
 .gallery-image {
   display: block;
@@ -67,14 +72,14 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(24, 42, 48, 0.16);
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .gallery-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 24px rgba(24, 42, 48, 0.22);
 }
 
 #modal-image {

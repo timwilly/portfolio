@@ -1,51 +1,83 @@
+:root {
+    --color-bg-start: #89D4CE;
+    --color-bg-blue: #7FB9D5;
+    --color-bg-lavender: #A39BCB;
+    --color-bg-end: #C996B2;
+    --color-nav: #173C3F;
+    --color-nav-end: #4B465E;
+    --color-surface: rgba(255, 255, 255, 0.78);
+    --color-surface-solid: #FFFFFF;
+    --color-surface-hover: #DCE8E5;
+    --color-text: #1D2A30;
+    --color-text-muted: #58676E;
+    --color-accent: #C96047;
+    --color-accent-hover: #A94E38;
+    --color-border: rgba(23, 60, 63, 0.12);
+}
+
 html {
-    background-repeat:no-repeat;
+    background-color: var(--color-bg-blue);
+    background-repeat: no-repeat;
     min-height: 100%;
     width: 100%;
     height: auto;
 }
 
 body {
-    background-image: linear-gradient(to left bottom, #5dece3, #46e1ee, #41d6f5, #51c9f7, #68bbf4, #78b1f1, #89a6eb, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5);    color: #EFEFEF;
+    background: linear-gradient(
+        to left bottom,
+        var(--color-bg-start) 0%,
+        var(--color-bg-blue) 35%,
+        var(--color-bg-lavender) 68%,
+        var(--color-bg-end) 100%
+    );
+    min-height: 100vh;
     width: 100%;
-    color: #EFEFEF;
+    color: var(--color-text);
+}
+
+body a {
+    color: #0F6F68;
+}
+
+body a:hover,
+body a:focus {
+    color: #0A514C;
 }
 
 /* Whole navbar */
 .navbar-custom {
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
     z-index: 2;
-    -webkit-box-shadow: -5px 1px 11px 8px rgba(0,0,0,0.10); 
-    box-shadow: -5px 1px 11px 8px rgba(0,0,0,0.10);
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 3px 16px rgba(23, 60, 63, 0.16);
     width: 100%;
-    color: #EFEFEF;
-    background-image: linear-gradient(to left,#41d6f5, #51c9f7, #68bbf4, #78b1f1, #89a6eb); /* Dégradé plus léger */
-
-
+    color: #F8FAF9;
+    background: linear-gradient(90deg, var(--color-nav), var(--color-nav-end));
 }
 
 /* Link on navbar */
 .navbar-custom a {
-    color: #EFEFEF;
-}
-
-.navbar-custom a:hover {
+    color: #F8FAF9;
 }
 
 /* Link on navbar while hovering */
-.navbar-custom ul li a:hover {
-    background-color: transparent;
+.navbar-custom ul li a:hover,
+.navbar-custom ul li a:focus {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Background color on language select */
 .navbar-custom ul li .lang_active {
-    background-color: #DEE1E1;
+    background-color: var(--color-surface-hover);
 }
 
 /* Dropdown result */
 .dropdown-menu>li>a {
-    color: #333;
+    color: var(--color-text);
 }
 
 /* Adding this to fix the background-color appearing after a double click on
@@ -71,7 +103,8 @@ body {
 
 /* Cursor hovering over a result on a dropdown selection */ 
 .dropdown-menu li a:hover {
-    background-color: #B8B8B8 !important;
+    color: var(--color-text) !important;
+    background-color: var(--color-surface-hover) !important;
 }
 
 /* Dropdown arrow */
@@ -99,10 +132,10 @@ body {
     content: "";
     position: absolute;
     width: 100%;
-    height: 6px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: var(--color-accent);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.17s ease-in-out 0s;
