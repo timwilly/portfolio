@@ -497,6 +497,134 @@ msgstr "Une erreur inattendu est survenu"
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "L'administrateur a été notifiée. Désolé de cet inconvénient!"
 
+#: app/templates/about_me/about_me.html
+msgid "Human and relational qualities"
+msgstr "Dimension humaine et relationnelle"
+
+#: app/templates/about_me/about_me.html
+msgid "I value respectful, attentive and constructive relationships."
+msgstr "J'accorde de l'importance à des relations respectueuses, attentives et constructives."
+
+#: app/templates/about_me/about_me.html
+msgid "Active listening"
+msgstr "Écoute active"
+
+#: app/templates/about_me/about_me.html
+msgid "I take the time to understand others before responding."
+msgstr "Je prends le temps de comprendre les autres avant de répondre."
+
+#: app/templates/about_me/about_me.html
+msgid "Respect and empathy"
+msgstr "Respect et empathie"
+
+#: app/templates/about_me/about_me.html
+msgid "I approach each person with consideration, openness and without judgment."
+msgstr "J'aborde chaque personne avec considération, ouverture et sans jugement."
+
+#: app/templates/about_me/about_me.html
+msgid "Clear communication"
+msgstr "Communication claire"
+
+#: app/templates/about_me/about_me.html
+msgid "I express my ideas simply and adapt to the people I work with."
+msgstr "J'exprime mes idées simplement et je m'adapte aux personnes avec qui je travaille."
+
+#: app/templates/about_me/about_me.html
+msgid "Collaboration and openness"
+msgstr "Collaboration et ouverture"
+
+#: app/templates/about_me/about_me.html
+msgid "I appreciate different perspectives and contribute constructively to teamwork."
+msgstr "J'apprécie les différents points de vue et je contribue de façon constructive au travail d'équipe."
+
+#: app/templates/about_me/about_me.html
+msgid "Work and organization"
+msgstr "Travail et organisation"
+
+#: app/templates/about_me/about_me.html
+msgid "I approach my work with structure, care and a clear sense of priorities."
+msgstr "J'aborde mon travail avec méthode, rigueur et un sens clair des priorités."
+
+#: app/templates/about_me/about_me.html
+msgid "Organization and autonomy"
+msgstr "Organisation et autonomie"
+
+#: app/templates/about_me/about_me.html
+msgid "I structure my work and move projects forward independently."
+msgstr "Je structure mon travail et je fais avancer les projets de manière autonome."
+
+#: app/templates/about_me/about_me.html
+msgid "Attention to detail"
+msgstr "Souci du détail"
+
+#: app/templates/about_me/about_me.html
+msgid "I verify my work carefully and aim for a reliable result."
+msgstr "Je vérifie mon travail avec soin et je vise un résultat fiable."
+
+#: app/templates/about_me/about_me.html
+msgid "Priority management"
+msgstr "Gestion des priorités"
+
+#: app/templates/about_me/about_me.html
+msgid "I identify what matters most and adjust my efforts as needs evolve."
+msgstr "J'identifie ce qui compte le plus et j'ajuste mes efforts selon l'évolution des besoins."
+
+#: app/templates/about_me/about_me.html
+msgid "Reliability and follow-through"
+msgstr "Fiabilité et suivi"
+
+#: app/templates/about_me/about_me.html
+msgid "I honor my commitments and make sure tasks are completed properly."
+msgstr "Je respecte mes engagements et je veille à ce que les tâches soient menées à terme correctement."
+
+#: app/templates/about_me/about_me.html
+msgid "What defines me"
+msgstr "Ce qui me définit"
+
+#: app/templates/about_me/about_me.html
+msgid "A few personal qualities that guide the way I learn, create and work."
+msgstr "Quelques qualités personnelles qui guident ma façon d'apprendre, de créer et de travailler."
+
+#: app/templates/about_me/about_me.html
+msgid "Communication"
+msgstr "Communication"
+
+#: app/templates/about_me/about_me.html
+msgid "Through my experience in reception and customer service, I have developed the ability to listen to people's needs, communicate clearly and remain professional in every situation. I always keep in mind that I represent the face of the company I work for."
+msgstr "Grâce à mes expériences en accueil et en service à la clientèle, j'ai développé ma capacité à écouter les besoins des gens, à communiquer clairement et à demeurer professionnel dans toutes les situations. Je garde toujours à l'esprit que je représente le visage de l'entreprise pour laquelle je travaille."
+
+#: app/templates/about_me/about_me.html
+msgid "Respect for others"
+msgstr "Respect d'autrui"
+
+#: app/templates/about_me/about_me.html
+msgid "I believe that strong professional relationships are built first and foremost on respect, listening and open-mindedness. I treat each person with the same respect I would like to receive."
+msgstr "Je crois que de bonnes relations professionnelles reposent avant tout sur le respect, l'écoute et l'ouverture d'esprit. Je traite chaque personne avec le même respect que celui que j'aimerais recevoir."
+
+#: app/templates/about_me/about_me.html
+msgid "Interpersonal intelligence"
+msgstr "Intelligence relationnelle"
+
+#: app/templates/about_me/about_me.html
+msgid "I place great importance on human relationships. Listening to others and understanding their realities are among the reasons that led me to pursue studies in career development. I enjoy listening to others, learning from their experience and discovering what they see that I may have missed. I believe that we always have something to learn from others and about ourselves."
+msgstr "J'accorde une grande importance aux relations humaines. Être à l'écoute et comprendre la réalité des autres font partie des raisons qui m'ont motivé à entreprendre des études en développement de carrière. J'aime écouter les autres, apprendre de leur expérience et découvrir ce qu'ils perçoivent et que je n'avais pas vu. Je suis d'avis que nous avons toujours quelque chose à apprendre des autres, mais aussi sur nous-mêmes."
+
+#: app/templates/about_me/about_me.html
+msgid "I am a meticulous person who takes the time to review my work and make sure each task is completed properly."
+msgstr "Je suis quelqu'un de minutieux qui prend le temps de vérifier son travail et de s'assurer que chaque tâche est bien réalisée."
+
+#: app/templates/about_me/about_me.html
+msgid "I like to work in a structured way. Planning each step, setting priorities and staying organized allow me to work efficiently. I developed and refined these qualities while working under pressure in the restaurant industry as a cook and host. I often had to reorganize my priorities to address a more urgent need."
+msgstr "J'aime travailler de façon structurée. Planifier les étapes, établir les priorités et maintenir une bonne organisation me permettent de travailler efficacement. J'ai développé et perfectionné ces qualités en travaillant sous pression dans le secteur de la restauration, comme cuisinier et comme hôte. Je devais fréquemment réorganiser mes priorités afin de répondre à un besoin plus urgent."
+
+#: app/templates/about_me/about_me.html
+msgid "Continuous improvement"
+msgstr "Amélioration continue"
+
+#: app/templates/about_me/about_me.html
+msgid "I constantly look for ways to improve how I work. Whether I am learning new technologies or refining my methods, I enjoy finding ways to become more efficient while maintaining a high standard of quality. We often learn through experience, and I then take the time to consider what I could do better next time."
+msgstr "Je cherche constamment à optimiser ma façon de travailler. Que ce soit en découvrant de nouvelles technologies ou en améliorant mes méthodes, j'aime trouver des moyens de gagner en efficacité tout en maintenant un haut niveau de qualité. On apprend souvent sur le terrain; je prends ensuite le temps de me demander ce que j'aurais pu faire de mieux afin de progresser la prochaine fois."
+
 #~ msgid "Home"
 #~ msgstr "Accueil"
 
@@ -534,4 +662,3 @@ msgstr "L'administrateur a été notifiée. Désolé de cet inconvénient!"
 #~ " du stress auprès d'un groupe "
 #~ "d'adulte"
 #~ msgstr ""
-

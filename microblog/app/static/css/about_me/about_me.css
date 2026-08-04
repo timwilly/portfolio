@@ -23,6 +23,98 @@
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+.personal-traits-heading {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.personal-traits-heading h2 {
+  margin: 0 0 10px;
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.personal-traits-heading p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.personal-traits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.personal-trait-group {
+  min-width: 0;
+  padding: 28px 34px;
+}
+
+.personal-trait-group + .personal-trait-group {
+  border-left: 1px solid var(--color-border);
+}
+
+.personal-trait-group h3 {
+  margin: 0 0 12px;
+  color: var(--color-nav);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.personal-trait-intro {
+  min-height: 52px;
+  margin: 0 0 20px;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.personal-characteristics {
+  border-top: 1px solid var(--color-border);
+}
+
+.personal-characteristic {
+  position: relative;
+  padding: 16px 0 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.personal-characteristic:last-child {
+  border-bottom: 0;
+}
+
+.personal-characteristic h4 {
+  margin: 0 0 5px;
+  color: var(--color-nav);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.personal-characteristic h4::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  background: var(--color-accent);
+}
+
+.personal-characteristic p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #cv_button {
   display: inline-block;
   color: #FFFFFF;
@@ -105,6 +197,27 @@
 
   .gallery-image:hover {
     transform: none;
+  }
+
+  .personal-traits-heading h2 {
+    font-size: 26px;
+  }
+
+  .personal-traits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-trait-group {
+    padding: 24px 0;
+  }
+
+  .personal-trait-group + .personal-trait-group {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+  }
+
+  .personal-trait-intro {
+    min-height: 0;
   }
 }
 

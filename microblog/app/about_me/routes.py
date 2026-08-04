@@ -13,7 +13,7 @@ def about_me():
     image_file_photography_6 = url_for('static', filename='pictures/complexe_desjardins.jpg')
     image_file_photography_7 = url_for('static', filename='pictures/vieux_port_2.jpg')
     image_file_photography_8 = url_for('static', filename='pictures/balcon.jpg')
-    return render_template('about_me/about_me.html', 
+    return render_template('about_me/about_me.html',
                            image_file_me=image_file_me,
                            image_file_photography_1=image_file_photography_1,
                            image_file_photography_2=image_file_photography_2,
