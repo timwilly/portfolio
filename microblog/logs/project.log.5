@@ -1,65 +1,4 @@
-2023-02-26 17:10:06,699 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:20:36,337 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:23:12,071 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:23:19,543 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/main/routes.py", line 243, in send_email
-    msg = Message("Test Email", sender="projet.timwilly@gmail.com", recipients=["willytime0147896325@hotmail.com"])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: __init__() takes 1 positional argument but 2 were given
-2023-02-26 17:30:34,200 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:30:34,964 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
-Traceback (most recent call last):
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1518, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1516, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1502, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/main/routes.py", line 247, in send_email
-    mail.send(msg)
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 491, in send
-    with self.connect() as connection:
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 144, in __enter__
-    self.host = self.configure_host()
-                ^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 158, in configure_host
-    host = smtplib.SMTP(self.mail.server, self.mail.port)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/smtplib.py", line 255, in __init__
-    (code, msg) = self.connect(host, port)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/smtplib.py", line 341, in connect
-    self.sock = self._get_socket(host, port, self.timeout)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/smtplib.py", line 312, in _get_socket
-    return socket.create_connection((host, port), timeout,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
-    raise exceptions[0]
-  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 111] Connection refused
-2023-02-26 17:32:04,720 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:32:05,423 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
+2023-02-26 17:39:18,114 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -82,11 +21,16 @@ Traceback (most recent call last):
                 ^^^^^^^^^^^^^^^^^^^^^
   File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 165, in configure_host
     host.login(self.mail.username, self.mail.password)
-  File "/usr/lib/python3.11/smtplib.py", line 716, in login
-    raise SMTPNotSupportedError(
-smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
-2023-02-26 17:32:59,362 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
-2023-02-26 17:33:00,003 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
+  File "/usr/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.9 Application-specific password required. Learn more at\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 190-20020a3705c7000000b0073b9ccb171asm3680820qkf.130 - gsmtp')
+2023-02-26 17:42:15,274 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
+2023-02-26 17:42:16,291 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
 Traceback (most recent call last):
   File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
     response = self.full_dispatch_request()
@@ -109,7 +53,44 @@ Traceback (most recent call last):
                 ^^^^^^^^^^^^^^^^^^^^^
   File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 165, in configure_host
     host.login(self.mail.username, self.mail.password)
-  File "/usr/lib/python3.11/smtplib.py", line 716, in login
-    raise SMTPNotSupportedError(
-smtplib.SMTPNotSupportedError: SMTP AUTH extension not supported by server.
-2023-02-26 17:39:16,614 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
+  File "/usr/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.9 Application-specific password required. Learn more at\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor b9-20020ae9eb09000000b0074236d3a149sm3722766qkg.92 - gsmtp')
+2023-02-26 17:44:16,499 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]
+2023-02-26 17:44:18,923 ERROR: Exception on /send_email [GET] [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/main/routes.py", line 247, in send_email
+    mail.send(msg)
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/venv/lib/python3.11/site-packages/flask_mail.py", line 165, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "/usr/lib/python3.11/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.11/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "/usr/lib/python3.11/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (534, b'5.7.9 Application-specific password required. Learn more at\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor h20-20020ac85154000000b0039cc0fbdb61sm3565994qtn.53 - gsmtp')
+2023-02-26 17:45:15,644 INFO: Project startup [in /mnt/c/Users/willw/Documents/GitHub/projet_photo/microblog/app/__init__.py:96]

@@ -4,8 +4,7 @@ from app.api import bp
 from app.api.forms import SearchForm
 from app.tasks import read_csv
 from datetime import datetime, date, time
-from flask import render_template, redirect, url_for, flash, request, Response, \
-                  jsonify
+from flask import render_template, redirect, url_for, flash, request, jsonify
 from itertools import islice
 from json import JSONEncoder
 from sqlalchemy import asc
@@ -43,9 +42,20 @@ def data_update():
 
 @bp.route('/search', methods=['GET'])
 def search():
-    all = BusinessMontreal.query.all()
-    values = list(set([str(value) for value in all]))
-    return Response(json.dumps(values), mimetype='application/json')
+    term = request.args.get('term', '').strip()
+
+    if len(term) < 2:
+        return jsonify([])
+
+    results = BusinessMontreal.query \
+        .with_entities(BusinessMontreal.name) \
+        .filter(BusinessMontreal.name.ilike(f'{term}%')) \
+        .distinct() \
+        .order_by(BusinessMontreal.name.asc()) \
+        .limit(10) \
+        .all()
+
+    return jsonify([name for name, in results])
 
 
 @bp.route('/food_business', methods=["GET", "POST"])
