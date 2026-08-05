@@ -1,0 +1,75 @@
+#mapid {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 500px; 
+    width: 100%;
+    z-index: 1;
+}
+
+.data-update-status {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 16px 0 0;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.data-update-label {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+
+#update_business_montreal_title h1{
+    text-align: center;
+}
+
+#business_autocomplete {
+}
+
+#submit {
+    color: #FFFFFF;
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+.ui-autocomplete-input {    
+    color:black;
+
+}
+
+.ui-autocomplete {
+    color: var(--color-text);
+    background-color: var(--color-surface-solid);
+    border: 1px solid var(--color-border);
+}
+
+.input {
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.ui-menu-item {
+    color: var(--color-text);
+}
+
+.ui-menu-item:hover,
+.ui-state-active {
+    color: var(--color-text);
+    background: var(--color-surface-hover);
+    border-color: var(--color-border);
+}
+
+.description {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .data-update-status {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

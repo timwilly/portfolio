@@ -6,6 +6,7 @@
 - [Description](#description)
 - [Functionnality](#functionnality)
 - [Installation](#installation)
+- [Montreal business data](#montreal-business-data)
 - [Notes](#notes)
 
 ## Description
@@ -30,11 +31,39 @@ You can use a CLI with python 3.10
 
 ```bash
 git clone https://github.com/timwilly/projet_photo.git
-cd microblog
+cd portfolio
 source venv/bin/activate
 pip install -r requirements.txt
 make run
 ```
+
+## Montreal business data
+
+Starting the application with `make run` does not download or import new
+business data.
+
+To download the latest official CSV file from the City of Montreal and update
+the database, run:
+
+```bash
+flask refresh-businesses-once
+```
+
+To preview the changes without modifying the database or replacing the local
+CSV file:
+
+```bash
+flask refresh-businesses-once --dry-run
+```
+
+To import the CSV file already stored locally without downloading a new copy:
+
+```bash
+flask import-businesses-once app/static/data/business_montreal.csv
+```
+
+Run these commands from the `portfolio` directory with the virtual environment
+activated.
 
 ## Notes
 
