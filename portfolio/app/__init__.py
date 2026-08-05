@@ -109,12 +109,11 @@ def register_extensions(app):
     mail.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)
-    babel.init_app(app)
+    babel.init_app(app, locale_selector=get_locale)
     login.init_app(app)
     scheduler.init_app(app)
     
 
-@babel.localeselector
 def get_locale():
     # Si l'utilisateur utilise un langage manuel du fureteur, il sera 
     # utilisé à l'intérieur de la session que nous utiliserons

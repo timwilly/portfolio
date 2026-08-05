@@ -162,7 +162,10 @@ class UserModelCase(unittest.TestCase):
             self.assertEqual(dry_result['updated'], 1)
             self.assertEqual(dry_result['deleted'], 1)
             self.assertEqual(BusinessMontreal.query.count(), 2)
-            self.assertEqual(BusinessMontreal.query.get(1).name, 'Ancien nom')
+            self.assertEqual(
+                db.session.get(BusinessMontreal, 1).name,
+                'Ancien nom'
+            )
 
             result = import_businesses_once(
                 csv_file.name, minimum_rows=1
@@ -175,8 +178,11 @@ class UserModelCase(unittest.TestCase):
                  BusinessMontreal.query.order_by(BusinessMontreal.id).all()],
                 [1, 3]
             )
-            self.assertEqual(BusinessMontreal.query.get(1).name, 'Nouveau nom')
-            self.assertIsNone(BusinessMontreal.query.get(2))
+            self.assertEqual(
+                db.session.get(BusinessMontreal, 1).name,
+                'Nouveau nom'
+            )
+            self.assertIsNone(db.session.get(BusinessMontreal, 2))
         finally:
             csv_file.close()
             os.unlink(csv_file.name)
@@ -217,7 +223,7 @@ class UserModelCase(unittest.TestCase):
             self.assertEqual(result['created'], 1)
             self.assertEqual(BusinessMontreal.query.count(), 1)
             self.assertEqual(
-                BusinessMontreal.query.get(10).name,
+                db.session.get(BusinessMontreal, 10).name,
                 'Entreprise téléchargée'
             )
             with open(destination_file.name, encoding='utf-8') as saved_file:

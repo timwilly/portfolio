@@ -92,7 +92,7 @@ class User(UserMixin, db.Model):
                             algorithms=['HS256'])['reset_password']
         except:
             return
-        return User.query.get(id)
+        return db.session.get(User, id)
 
     # Nombre de messages non lu
     def new_messages(self):
@@ -308,4 +308,4 @@ def string_to_float(string):
 
 @login.user_loader
 def load_user(id):
-    return User.query.get(int(id))
+    return db.session.get(User, int(id))
