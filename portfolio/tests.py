@@ -42,7 +42,20 @@ class UserModelCase(unittest.TestCase):
         u = User(username = 'john', email = 'john@example.com')
         self.assertEqual(u.avatar(128), ('https://www.gravatar.com/avatar/'
                                          'd4c74594d841139328695756648b6bd6'
-                                         '?d=identicon&s=128'))
+                                         '?d=identicon&f=y&s=128'))
+
+    def test_home_is_public_and_protected_pages_redirect_to_login(self):
+        client = self.app.test_client()
+
+        response = client.get('/')
+        self.assertEqual(response.status_code, 302)
+        self.assertTrue(response.headers['Location'].endswith('/about_me'))
+        with client.session_transaction() as session:
+            self.assertNotIn('_flashes', session)
+
+        response = client.get('/index')
+        self.assertEqual(response.status_code, 302)
+        self.assertIn('/auth/login', response.headers['Location'])
 
     def test_feed_and_explore_navigation_requires_authentication(self):
         client = self.app.test_client()
@@ -65,6 +78,22 @@ class UserModelCase(unittest.TestCase):
         response = client.get('/about_me')
         self.assertIn(b'href="/index"', response.data)
         self.assertIn(b'href="/explore"', response.data)
+
+    def test_profile_picture_upload_is_disabled(self):
+        client = self.app.test_client()
+        user = User(username='willy', email='willy@example.com')
+        user.set_password('test')
+        db.session.add(user)
+        db.session.commit()
+
+        client.post('/auth/login', data={
+            'username': 'willy',
+            'password': 'test'
+        })
+        response = client.get('/edit_profile')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertNotIn(b'type="file"', response.data)
     
     def test_follow(self):
         u1 = User(username='john', email='john@example.com')

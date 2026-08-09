@@ -24,7 +24,11 @@ def before_request():
 
 # @bp.route est un décorateur, le user invoque l'url ci-dessous
 # Flask retourne une réponse (notamment le 'return'..)
-@bp.route('/', methods=['GET', 'POST'])
+@bp.route('/')
+def home():
+    return redirect(url_for('about_me.about_me'))
+
+
 @bp.route('/index', methods=['GET', 'POST'])
 @login_required
 def index():

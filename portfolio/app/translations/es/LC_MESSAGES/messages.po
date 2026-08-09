@@ -255,8 +255,12 @@ msgid "Find Montreal establishments and view their details on an interactive map
 msgstr "Encontrar establecimientos de Montreal y consultar sus detalles en un mapa interactivo."
 
 #: app/templates/about_me/about_me.html
-msgid "Create an account to publish posts, follow users, exchange private messages and add a profile picture."
-msgstr "Crear una cuenta para publicar, seguir a otros usuarios, intercambiar mensajes privados y añadir una foto de perfil."
+msgid "Create an account to publish posts, follow users, send private messages and upload profile pictures. Unfortunately, profile picture uploads are disabled for security reasons."
+msgstr "Crear una cuenta para publicar, seguir a otros usuarios, enviar mensajes privados y subir fotos de perfil. Lamentablemente, la carga de fotos de perfil está desactivada por motivos de seguridad."
+
+#: app/templates/edit_profile.html
+msgid "Profile picture uploads are disabled for security reasons."
+msgstr "La carga de fotos de perfil está desactivada por motivos de seguridad."
 
 #: app/templates/about_me/about_me.html
 msgid "Browse the site in English, French or Spanish."
