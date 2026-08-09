@@ -16,17 +16,16 @@
         <a id="cv_button" target="_blank" href="{{ url_for('static', filename='pdf/CV_WillyTim.pdf') }}" >{{ _("Curriculum Vitae") }}</a>
       </div>
       <div class="col-md-5">
-          <p id="introduction">
-            {{ _("Hello and welcome to my website. On this page, you will have an 
-                overview of my background, my interests and my skills. On this site,
-                you can try to create an account and navigate through the different 
-                settings as if it were a social network, you can explore the 
-                different businesses in Montreal and their status and finally change the 
-                language.") }}</p>
-          <br>
-          <p id="introduction">
-            {{ _("Thank you and enjoy your visit!") }}
-          </p>
+        <div class="introduction">
+          <p>{{ _("My name is Willy. I hold a bachelor's degree in Computer Science and Software Engineering and completed a major in Career Development.") }}</p>
+          <p>{{ _("I built this portfolio to put my web development skills into practice. You can:") }}</p>
+          <ul class="introduction-features">
+            <li>{{ _("Find Montreal establishments and view their details on an interactive map.") }}</li>
+            <li>{{ _("Create an account to publish posts, follow users, exchange private messages and add a profile picture.") }}</li>
+            <li>{{ _("Browse the site in English, French or Spanish.") }}</li>
+          </ul>
+          <p class="introduction-demo">{{ _("Demo account: Username 'test' | Password 'test'") }}</p>
+        </div>
       </div>
   </div>
   <br><br>
@@ -77,21 +76,73 @@
     </div>
   </section>
   <br><br>
-  <!--
-  <div class="row glass-effect" id="information">
-    <h1>{{ _("My skills")}}</h1>
-    <div class="col-md-2">
+  <section class="row glass-effect technologies-section" aria-labelledby="technologies-title">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="technologies-heading">
+        <h2 id="technologies-title">{{ _("Technologies and tools") }}</h2>
+        <p>{{ _("The technologies I have learned.") }}</p>
+      </div>
+      <div class="technologies-grid">
+        <article class="technology-group">
+          <h3>{{ _("Office tools") }}</h3>
+          <ul class="technology-list">
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Microsoft Outlook</li>
+          </ul>
+        </article>
+        <article class="technology-group">
+          <h3>{{ _("Front-end development") }}</h3>
+          <ul class="technology-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+          </ul>
+        </article>
+        <article class="technology-group">
+          <h3>{{ _("Back-end and tools") }}</h3>
+          <ul class="technology-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>Node.js</li>
+            <li>Flask</li>
+            <li>SQL</li>
+            <li>REST APIs</li>
+            <li>GitHub</li>
+          </ul>
+        </article>
+      </div>
     </div>
-    <div class="col-md-4">
-      {{ _("Python")}}
+  </section>
+  <br><br>
+  <section class="row glass-effect projects-section" aria-labelledby="projects-title">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="projects-heading">
+        <h2 id="projects-title">{{ _("Projects") }}</h2>
+      </div>
+      <article class="project-showcase">
+        <div class="project-media">
+          <img src="{{ url_for('static', filename='pictures/big_two_project.jpg') }}" alt="{{ _('Big Two online game lobby') }}" class="project-image">
+        </div>
+        <div class="project-content">
+          <h3>Big Two</h3>
+          <p>{{ _("An online multiplayer card game with public and private lobbies, configurable bots, bilingual support and built-in game rules.") }}</p>
+          <a class="project-link" href="https://big-two-project.onrender.com" target="_blank" rel="noopener noreferrer">{{ _("Play Big Two") }}</a>
+        </div>
+      </article>
     </div>
-  </div>
-  -->
+  </section>
+  <br><br>
 </div>
   <div class="container">
   <div class="row glass-effect" id="information">
-    <h1 class="photography_title">{{ _("Photography")}}</h1>
-    <h3 class="photography_description">{{ _("I'm a passionate photographer and here is a few of my photos")}}</h3>
+    <div class="photography-heading">
+      <h2>{{ _("Photography") }}</h2>
+      <p>{{ _("I am passionate about photography. Here are a few of my photos.") }}</p>
+    </div>
     <div class="col-md-10 col-md-offset-1">
         <div class="photo-gallery">
           <img src="{{ image_file_photography_1 }}" alt="{{ _('Photo 1') }}" class="gallery-image" data-image="{{ image_file_photography_1 }}" data-toggle="modal" data-target="#imageModal">
@@ -102,6 +153,7 @@
           <img src="{{ image_file_photography_6 }}" alt="{{ _('Photo 6') }}" class="gallery-image" data-image="{{ image_file_photography_6 }}" data-toggle="modal" data-target="#imageModal">
           <img src="{{ image_file_photography_7 }}" alt="{{ _('Photo 7') }}" class="gallery-image" data-image="{{ image_file_photography_7 }}" data-toggle="modal" data-target="#imageModal">
           <img src="{{ image_file_photography_8 }}" alt="{{ _('Photo 8') }}" class="gallery-image" data-image="{{ image_file_photography_8 }}" data-toggle="modal" data-target="#imageModal">
+          <img src="{{ image_file_photography_9 }}" alt="{{ _('Photo 9') }}" class="gallery-image" data-image="{{ image_file_photography_9 }}" data-toggle="modal" data-target="#imageModal">
         </div>
     </div>
   </div>

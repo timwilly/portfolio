@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 class TestConfig(Config):
     # TESTING détermine si ça roule au travers des tests unitaire ou non...
     TESTING = True
+    WTF_CSRF_ENABLED = False
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
 class UserModelCase(unittest.TestCase):
@@ -42,6 +43,28 @@ class UserModelCase(unittest.TestCase):
         self.assertEqual(u.avatar(128), ('https://www.gravatar.com/avatar/'
                                          'd4c74594d841139328695756648b6bd6'
                                          '?d=identicon&s=128'))
+
+    def test_feed_and_explore_navigation_requires_authentication(self):
+        client = self.app.test_client()
+
+        response = client.get('/about_me')
+        self.assertNotIn(b'href="/index"', response.data)
+        self.assertNotIn(b'href="/explore"', response.data)
+
+        user = User(username='willy', email='willy@example.com')
+        user.set_password('test')
+        db.session.add(user)
+        db.session.commit()
+
+        login_response = client.post('/auth/login', data={
+            'username': 'willy',
+            'password': 'test'
+        })
+        self.assertEqual(login_response.status_code, 302)
+
+        response = client.get('/about_me')
+        self.assertIn(b'href="/index"', response.data)
+        self.assertIn(b'href="/explore"', response.data)
     
     def test_follow(self):
         u1 = User(username='john', email='john@example.com')

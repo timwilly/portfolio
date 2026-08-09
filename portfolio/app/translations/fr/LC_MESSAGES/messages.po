@@ -242,26 +242,29 @@ msgstr "Ne plus suivre"
 msgid "Curriculum Vitae"
 msgstr ""
 
-#: app/templates/about_me/about_me.html:20
-msgid ""
-"Hello and welcome to my website. On this page, you will have an \n"
-"                overview of my background, my interests and my skills. On"
-" this site,\n"
-"                you can try to create an account and navigate through the"
-" different \n"
-"                settings as if it were a social network, you can explore "
-"the \n"
-"                different businesses in Montreal and their status and "
-"finally change the \n"
-"                language."
-msgstr ""
-"Bonjour et bienvenue sur mon site web. Sur cette page \n"
-"vous aurez une aperçu de mon parcours, de mes intérêts et mes "
-"compétences. \n"
-" Sur ce site, vous pouvez tenter de créer un compte et naviguer au "
-"travers des différentes paramètres comme si c'était un réseau social, "
-"vous pourrez explorer les différents commerces \n"
-"de Montréal et leur état et finalement changer la langue.\n"
+#: app/templates/about_me/about_me.html
+msgid "My name is Willy. I hold a bachelor's degree in Computer Science and Software Engineering and completed a major in Career Development."
+msgstr "Je m'appelle Willy et je suis titulaire d'un baccalauréat en informatique et génie logiciel ainsi que d'une majeure en développement de carrière."
+
+#: app/templates/about_me/about_me.html
+msgid "I built this portfolio to put my web development skills into practice. You can:"
+msgstr "J'ai créé ce portfolio afin de mettre mes compétences en développement web en pratique. Vous pouvez :"
+
+#: app/templates/about_me/about_me.html
+msgid "Find Montreal establishments and view their details on an interactive map."
+msgstr "Trouver des établissements de Montréal et consulter leurs détails sur une carte interactive."
+
+#: app/templates/about_me/about_me.html
+msgid "Create an account to publish posts, follow users, exchange private messages and add a profile picture."
+msgstr "Créer un compte pour publier dans le fil d'actualité, suivre d'autres utilisateurs, échanger des messages privés et ajouter une photo de profil."
+
+#: app/templates/about_me/about_me.html
+msgid "Browse the site in English, French or Spanish."
+msgstr "Parcourir le site en anglais, en français ou en espagnol."
+
+#: app/templates/about_me/about_me.html
+msgid "Demo account: Username 'test' | Password 'test'"
+msgstr "Compte de démonstration : Nom d'utilisateur 'test' | Mot de passe 'test'"
 
 #: app/templates/about_me/about_me.html:28
 msgid "Thank you and enjoy your visit!"
@@ -333,8 +336,8 @@ msgid "Photography"
 msgstr "Photographie"
 
 #: app/templates/about_me/about_me.html:108
-msgid "I'm a passionate photographer and here is a few of my photos"
-msgstr "Je suis passionné de photographie et voici quelques-unes de mes photos"
+msgid "I am passionate about photography. Here are a few of my photos."
+msgstr "Je suis passionné de photographie. Voici quelques-unes de mes photos."
 
 #: app/templates/about_me/about_me.html:112
 msgid "Photo 1"
@@ -367,6 +370,10 @@ msgstr ""
 #: app/templates/about_me/about_me.html:119
 msgid "Photo 8"
 msgstr ""
+
+#: app/templates/about_me/about_me.html
+msgid "Photo 9"
+msgstr "Photo 9"
 
 #: app/templates/about_me/about_me.html:129
 msgid "Image Preview"
@@ -580,6 +587,42 @@ msgstr "Je respecte mes engagements et je veille à ce que les tâches soient me
 #: app/templates/about_me/about_me.html
 msgid "What defines me"
 msgstr "Ce qui me définit"
+
+#: app/templates/about_me/about_me.html
+msgid "Technologies and tools"
+msgstr "Technologies et outils"
+
+#: app/templates/about_me/about_me.html
+msgid "Office tools"
+msgstr "Outils bureautiques"
+
+#: app/templates/about_me/about_me.html
+msgid "The technologies I have learned."
+msgstr "Les technologies que j'ai apprises."
+
+#: app/templates/about_me/about_me.html
+msgid "Projects"
+msgstr "Projets"
+
+#: app/templates/about_me/about_me.html
+msgid "Big Two online game lobby"
+msgstr "Salon du jeu en ligne Big Two"
+
+#: app/templates/about_me/about_me.html
+msgid "An online multiplayer card game with public and private lobbies, configurable bots, bilingual support and built-in game rules."
+msgstr "Un jeu de cartes multijoueur en ligne avec des salons publics et privés, des robots configurables, une interface bilingue et des règles intégrées."
+
+#: app/templates/about_me/about_me.html
+msgid "Play Big Two"
+msgstr "Jouer à Big Two"
+
+#: app/templates/about_me/about_me.html
+msgid "Front-end development"
+msgstr "Développement front-end"
+
+#: app/templates/about_me/about_me.html
+msgid "Back-end and tools"
+msgstr "Back-end et outils"
 
 #: app/templates/about_me/about_me.html
 msgid "A few personal qualities that guide the way I learn, create and work."

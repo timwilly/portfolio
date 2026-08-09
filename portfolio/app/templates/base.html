@@ -26,8 +26,10 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    {% if current_user.is_authenticated %}
                     <li><a class="nav-link nav-link-ltr" href="{{ url_for('main.index') }}">{{ _('Feed') }}</a></li>
                     <li><a class="nav-link nav-link-ltr" href="{{ url_for('main.explore') }}">{{ _('Explore') }}</a></li>
+                    {% endif %}
                     <li><a class="nav-link nav-link-ltr" href="{{ url_for('api.map') }}">{{ _('Map') }}</a></li>
                     <!--<li class="nav-item dropdown">
                         <a class="btn-secondary dropdown-toggle nav-link nav-link-ltr" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
