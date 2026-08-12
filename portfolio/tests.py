@@ -57,6 +57,12 @@ class UserModelCase(unittest.TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertIn('/auth/login', response.headers['Location'])
 
+    def test_login_uses_portfolio_section_style(self):
+        response = self.app.test_client().get('/auth/login')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'class="glass-effect login-section"', response.data)
+
     def test_feed_and_explore_navigation_requires_authentication(self):
         client = self.app.test_client()
 

@@ -4,27 +4,31 @@
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/auth/login.css') }}">
-
 {% endblock %}
 
 {% block app_content %}
-    <h1>{{ _('Sign in') }}</h1>
-    <div class="row">
-        <div class="col-md-4">
-            {{ wtf.quick_form(form) }}<br>
-            <p>{{ _('New user?') }}<a href="{{ url_for('auth.register') }}"> {{ _('Click to register!') }}</a></p>
-    <p>{{ _('Forgot your password?') }} <a href="{{ url_for('auth.reset_password_request') }}"> {{ _('Click to reset') }}</a></p>
-        </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-5">
-            <!-- Ajoutez votre bloc de texte ici -->
-            <p id="notice">
-                {{ _('On this page, you can create an account, login, reset your password, 
-                interact with other, follow each other and have a main feed.') }}
+    <div class="login-page">
+        <section class="glass-effect login-section" aria-labelledby="login-title">
+            <div class="login-heading">
+                <h1 id="login-title">{{ _('Sign in') }}</h1>
+            </div>
 
-            </p>
-        </div>
+            <div class="login-grid">
+                <div class="login-form-column">
+                    {{ wtf.quick_form(form) }}
+                    <div class="login-links">
+                        <p>{{ _('New user?') }} <a href="{{ url_for('auth.register') }}">{{ _('Click to register!') }}</a></p>
+                        <p>{{ _('Forgot your password?') }} <a href="{{ url_for('auth.reset_password_request') }}">{{ _('Click to reset') }}</a></p>
+                    </div>
+                </div>
+
+                <div class="login-information">
+                    <p id="notice">
+                        {{ _('On this page, you can create an account, login, reset your password,
+                        interact with other, follow each other and have a main feed.') }}
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
-    <br>
 {% endblock %}

@@ -244,7 +244,7 @@ msgstr ""
 
 #: app/templates/about_me/about_me.html
 msgid "My name is Willy. I hold a bachelor's degree in Computer Science and Software Engineering and completed a major in Career Development."
-msgstr "Je m'appelle Willy et je suis titulaire d'un baccalauréat en informatique et génie logiciel ainsi que d'une majeure en développement de carrière."
+msgstr "Je m'appelle Willy et je possède un baccalauréat en informatique et génie logiciel ainsi qu'une majeure en développement de carrière."
 
 #: app/templates/about_me/about_me.html
 msgid "I built this portfolio to put my web development skills into practice. You can:"
